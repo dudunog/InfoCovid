@@ -1,10 +1,57 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+  ViewData["Title"] = "InfoCovid";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h3>Mundo</h3>
+
+<div class="card-group d-flex justify-content-around">
+  <div class="col-xxl-3 col-lg-3">
+    <div class="card bg-primary text-white mb-3" style="max-width: 14rem;">
+      <div class="card-body">
+        <h5 class="card-text">Casos confirmados</h5>
+        <h3>@String.Format("{0:#,#}", @Model.Global.TotalConfirmed)</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxl-3 col-lg-3">
+    <div class="card bg-danger text-white mb-3" style="max-width: 14rem;">
+      <div class="card-body">
+        <h5 class="card-text">Mortes</h5>
+        <h3>@String.Format("{0:#,#}", @Model.Global.TotalDeaths)</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-xxl-3 col-lg-3">
+    <div class="card bg-success text-white mb-3" style="max-width: 14rem;">
+      <div class="card-body">
+        <h5 class="card-text">Casos recuperados</h5>
+        <h3>@String.Format("{0:#,#}", @Model.Global.TotalRecovered)</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Países</h3>
+
+<div class="card-group">
+  @foreach (var item in Model.Countries)
+  {
+    <div class="col-xxl-3 col-lg-3">
+      <div class="card mb-4" style="background-color: #2E3140;">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="mr-3">
+              <div class="text-white">@item.Name</div>
+              <div class="text-lg text-white font-bold">@item.TotalDeaths</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a class="small text-white stretched-link" href="#">View Report</a>
+        </div>
+      </div>
+    </div>
+  }
 </div>
