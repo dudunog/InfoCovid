@@ -27,7 +27,7 @@ namespace InfoCovid.Pages
       {
         string key_contries = "contries_cache"; // Chave do cache.
         string key_global = "contries_global"; // Chave do cache.
-        if (!MemoryCache.TryGetValue<Country[]>(key_contries, out Country[] values)) // Verifica se há dados em cache.
+        if (!(MemoryCache.TryGetValue<Country[]>(key_contries, out Country[] values) && MemoryCache.TryGetValue<Global>(key_global, out Global value))) // Verifica se há dados em cache.
         {
           var create = RestService.For<IGetRootobject>("https://api.covid19api.com/summary");
           var result = await create.GetAsync(); // ou var result = create.GetAsync().GetAwaiter().GetResult();
@@ -38,6 +38,7 @@ namespace InfoCovid.Pages
         }
         else
         {
+          Global = value;
           Countries = values;
         }
       }

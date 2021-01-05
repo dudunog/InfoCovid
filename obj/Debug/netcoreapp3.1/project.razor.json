@@ -14397,6 +14397,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Filters/LatestNewsletters.cshtml",
+      "TargetPath": "Pages\\Filters\\LatestNewsletters.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Filters/Deaths.cshtml",
+      "TargetPath": "Pages\\Filters\\Deaths.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
@@ -14404,6 +14414,11 @@
     {
       "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Filters/Today.cshtml",
+      "TargetPath": "Pages\\Filters\\Today.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,6 +14434,11 @@
     {
       "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/Pages/Filters/Cities.cshtml",
+      "TargetPath": "Pages\\Filters\\Cities.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -33,25 +33,68 @@
   </div>
 </div>
 
-<h3>Países</h3>
+<h3>Filtrar</h3>
 
 <div class="card-group">
-  @foreach (var item in Model.Countries)
-  {
-    <div class="col-xxl-3 col-lg-3">
-      <div class="card mb-4" style="background-color: #2E3140;">
+  <div class="col-xxl-3 col-lg-2">
+    <div class="card mb-4" style="background-color: #2E3140;">
+      <a class="stretched-link" href="/filtro/paises">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div class="mr-3">
-              <div class="text-white">@item.Name</div>
-              <div class="text-lg text-white font-bold">@item.TotalDeaths</div>
+              <div class="text-white text-center">Países</div>
             </div>
           </div>
         </div>
-        <div class="card-footer d-flex justify-content-between">
-          <a class="small text-white stretched-link" href="#">View Report</a>
-        </div>
-      </div>
+      </a>
     </div>
-  }
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="col-xxl-3 col-lg-2">
+    <div class="card mb-4" style="background-color: #2E3140;">
+      <a class="stretched-link" href="/filtro/hoje">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="mr-3">
+              <div class="text-white">Hoje</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="col-xxl-3 col-lg-2">
+    <div class="card mb-4" style="background-color: #2E3140;">
+      <a class="stretched-link" href="/filtro/ultimosboletins">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="mr-3">
+              <div class="text-white">Últimos boletins</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="col-xxl-3 col-lg-2">
+    <div class="card mb-4" style="background-color: #2E3140;">
+      <a class="stretched-link" href="/filtro/obitos">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <div class="mr-3">
+              <div class="text-white">Óbitos</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
