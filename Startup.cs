@@ -25,7 +25,8 @@ namespace InfoCovid
     {
       services.AddRazorPages(options =>
       {
-        options.Conventions.AddPageRoute("/Filters/Cities", "/filtro/paises");
+        options.Conventions.AddPageRoute("/Filters/Countries", "/filtro/paises");
+        options.Conventions.AddPageRoute("/Filters/Country", "/filtro/pais/{text?}");
         options.Conventions.AddPageRoute("/Filters/Today", "/filtro/hoje");
         options.Conventions.AddPageRoute("/Filters/LatestNewsletters", "/filtro/ultimosboletins");
         options.Conventions.AddPageRoute("/Filters/Deaths", "/filtro/obitos");

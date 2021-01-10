@@ -6,10 +6,10 @@ namespace InfoCovid.Pages.Filters
 {
   public class DeathsModel : PageModel
   {
-    private readonly ILogger<CitiesModel> _logger;
+    private readonly ILogger<DeathsModel> _logger;
     public IMemoryCache MemoryCache { get; private set; }
 
-    public DeathsModel(ILogger<CitiesModel> logger, IMemoryCache memoryCache)
+    public DeathsModel(ILogger<DeathsModel> logger, IMemoryCache memoryCache)
     {
       _logger = logger;
       MemoryCache = memoryCache;

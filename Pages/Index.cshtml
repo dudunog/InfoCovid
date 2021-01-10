@@ -5,13 +5,15 @@
 }
 
 <h3>Mundo</h3>
+<p>Última atualização: @Model.Date</p>
 
-<div class="card-group d-flex justify-content-around">
+<div class="card-group d-flex justify-content-around lg-10">
   <div class="col-xxl-3 col-lg-3">
     <div class="card bg-primary text-white mb-3" style="max-width: 14rem;">
       <div class="card-body">
         <h5 class="card-text">Casos confirmados</h5>
-        <h3>@String.Format("{0:#,#}", @Model.Global.TotalConfirmed)</h3>
+        <h2>@Model.Global.TotalConfirmed.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))
+        </h2>
       </div>
     </div>
   </div>
@@ -19,7 +21,8 @@
     <div class="card bg-danger text-white mb-3" style="max-width: 14rem;">
       <div class="card-body">
         <h5 class="card-text">Mortes</h5>
-        <h3>@String.Format("{0:#,#}", @Model.Global.TotalDeaths)</h3>
+        <h2>@Model.Global.TotalDeaths.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))
+        </h2>
       </div>
     </div>
   </div>
@@ -27,7 +30,8 @@
     <div class="card bg-success text-white mb-3" style="max-width: 14rem;">
       <div class="card-body">
         <h5 class="card-text">Casos recuperados</h5>
-        <h3>@String.Format("{0:#,#}", @Model.Global.TotalRecovered)</h3>
+        <h2>@Model.Global.TotalRecovered.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))
+        </h2>
       </div>
     </div>
   </div>
@@ -38,59 +42,11 @@
 <div class="card-group">
   <div class="col-xxl-3 col-lg-2">
     <div class="card mb-4" style="background-color: #2E3140;">
-      <a class="stretched-link" href="/filtro/paises">
+      <a href="/filtro/paises" class="btn" role="button">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <div class="mr-3">
               <div class="text-white text-center">Países</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="card-group">
-  <div class="col-xxl-3 col-lg-2">
-    <div class="card mb-4" style="background-color: #2E3140;">
-      <a class="stretched-link" href="/filtro/hoje">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div class="mr-3">
-              <div class="text-white">Hoje</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="card-group">
-  <div class="col-xxl-3 col-lg-2">
-    <div class="card mb-4" style="background-color: #2E3140;">
-      <a class="stretched-link" href="/filtro/ultimosboletins">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div class="mr-3">
-              <div class="text-white">Últimos boletins</div>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="card-group">
-  <div class="col-xxl-3 col-lg-2">
-    <div class="card mb-4" style="background-color: #2E3140;">
-      <a class="stretched-link" href="/filtro/obitos">
-        <div class="card-body">
-          <div class="d-flex justify-content-between">
-            <div class="mr-3">
-              <div class="text-white">Óbitos</div>
             </div>
           </div>
         </div>

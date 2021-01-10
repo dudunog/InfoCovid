@@ -4,9 +4,9 @@ using InfoCovid.Models;
 
 namespace InfoCovid
 {
-  public interface IGetRootobject
+  public interface IGetRoot
   {
     [Get("")]
-    Task<Rootobject> GetAsync();
+    Task<Root> GetAsync();
   }
 }

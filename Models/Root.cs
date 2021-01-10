@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace InfoCovid.Models
 {
-  public class Rootobject
+  public class Root
   {
     [JsonProperty("Message")]
     public string Message { get; set; }
@@ -14,6 +14,7 @@ namespace InfoCovid.Models
 
     [JsonProperty("Countries")]
     public Country[] Countries { get; set; }
+    
     [JsonProperty("Date")]
     public DateTime Date { get; set; }
   }

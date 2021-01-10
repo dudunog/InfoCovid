@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/InfoCovid.csproj": {}
+    "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj": {}
   },
   "projects": {
-    "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/InfoCovid.csproj": {
+    "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/InfoCovid.csproj",
+        "projectUniqueName": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
         "projectName": "InfoCovid",
-        "projectPath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/InfoCovid.csproj",
+        "projectPath": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
         "packagesPath": "/home/eduardo/.nuget/packages/",
-        "outputPath": "/home/eduardo/Documentos/git-projects/InfoCovid/InfoCovid/obj/",
+        "outputPath": "/home/eduardo/Desktop/infoc/InfoCovid/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/eduardo/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
         }
       }
     }

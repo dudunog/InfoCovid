@@ -13,7 +13,7 @@ namespace InfoCovid.Pages
   {
     private readonly ILogger<IndexModel> _logger;
     public Global Global { get; private set; }
-    public Country[] Countries { get; private set; }
+    public DateTime Date { get; private set; }
     public IMemoryCache MemoryCache { get; private set; }
     public IndexModel(ILogger<IndexModel> logger, IMemoryCache memoryCache)
     {
@@ -25,21 +25,26 @@ namespace InfoCovid.Pages
     {
       try
       {
-        string key_contries = "contries_cache"; // Chave do cache.
-        string key_global = "contries_global"; // Chave do cache.
-        if (!(MemoryCache.TryGetValue<Country[]>(key_contries, out Country[] values) && MemoryCache.TryGetValue<Global>(key_global, out Global value))) // Verifica se há dados em cache.
+        string key_global = "global_cache"; // Chave do cache.
+        string key_date = "date_cache";
+
+        Global global = null;
+        DateTime date = DateTime.MinValue;
+
+        if (!MemoryCache.TryGetValue<Global>(key_global, out global) &&
+              (!MemoryCache.TryGetValue<DateTime>(key_date, out date))) // Verifica se há dados em cache.
         {
-          var create = RestService.For<IGetRootobject>("https://api.covid19api.com/summary");
+          var create = RestService.For<IGetRoot>("https://api.covid19api.com/summary");
           var result = await create.GetAsync(); // ou var result = create.GetAsync().GetAwaiter().GetResult();
           Global = result.Global;
-          Countries = result.Countries;
-          MemoryCache.Set(key_contries, Countries, System.TimeSpan.FromMinutes(30)); // Salva os dados em cache e define um tempo de expiração
-          MemoryCache.Set(key_global, Global, System.TimeSpan.FromMinutes(30));
+          Date = result.Date;
+          MemoryCache.Set(key_global, Global, System.TimeSpan.FromMinutes(30)); // Salva os dados em cache e define um tempo de expiração.
+          MemoryCache.Set(key_date, Date, System.TimeSpan.FromMinutes(30));
         }
         else
         {
-          Global = value;
-          Countries = values;
+          Global = global;
+          Date = (DateTime)MemoryCache.Get(key_date);
         }
       }
       catch (Exception e)
