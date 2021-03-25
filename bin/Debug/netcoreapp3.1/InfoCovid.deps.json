@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "InfoCovid/1.0.0": {
         "dependencies": {
+          "Moment.js": "2.29.1",
           "Refit": "5.2.4",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -314,6 +315,7 @@
           "InfoCovid.dll": {}
         }
       },
+      "Moment.js/2.29.1": {},
       "Newtonsoft.Json/12.0.3": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -2044,6 +2046,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Moment.js/2.29.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CSpZfBYACe5QBFtPRv7k6IS5TZmdcisKFIRdQee1ZINjKl05AlSCTaXn/bo25XUnD82L0vvdEJXH+uv3nKeaiA==",
+      "path": "moment.js/2.29.1",
+      "hashPath": "moment.js.2.29.1.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.3": {
       "type": "package",

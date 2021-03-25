@@ -29,9 +29,9 @@ namespace InfoCovid.Pages
         string key_date = "date_cache";
 
         Global global = null;
-        DateTime date = DateTime.MinValue;
+        DateTime date = MemoryCache.Get<DateTime>(key_date);
 
-        if (!MemoryCache.TryGetValue<Global>(key_global, out global) &&
+        if (!MemoryCache.TryGetValue<Global>(key_global, out global) ||
               (!MemoryCache.TryGetValue<DateTime>(key_date, out date))) // Verifica se há dados em cache.
         {
           var create = RestService.For<IGetRoot>("https://api.covid19api.com/summary");
@@ -44,7 +44,7 @@ namespace InfoCovid.Pages
         else
         {
           Global = global;
-          Date = (DateTime)MemoryCache.Get(key_date);
+          Date = date;
         }
       }
       catch (Exception e)

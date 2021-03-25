@@ -4,8 +4,11 @@
   ViewData["Title"] = "InfoCovid";
 }
 
-<h3>Países</h3>
-<p>Última atualização: @Model.Date</p>
+<h2>Países</h2>
+<p>Última atualização: @Model.Date.ToLocalTime().ToString("g",
+  System.Globalization.CultureInfo.CreateSpecificCulture("pt-Br"))
+</p>
+
 <div class="table-responsive">
   <table id="CountriesTable" class="table table-striped table-hover table-dark" style="width:100%">
     <thead class="thead-dark">
@@ -20,12 +23,13 @@
       @foreach (var item in @Model.Countries)
       {
         <tr>
-          <a href="/fitro/pais" class="" name="pais" role="button"><td>@item.Name</td></a>
-          <a href="/fitro/pais" class="" name="pais" role="button"><td>@item.TotalConfirmed</td></a>
-          <a href="/fitro/pais" class="" name="pais" role="button"><td>@item.TotalRecovered</td></a>
-          <a href="/fitro/pais" class="" name="pais" role="button"><td>@item.TotalDeaths</td></a>
+          <td>@item.Name</td>
+          <td>@item.TotalConfirmed.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))</td>
+          <td>@item.TotalRecovered.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))</td>
+          <td>@item.TotalDeaths.ToString("N0", System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR"))</td>
         </tr>
       }
+      </a>
     </tbody>
     <tfoot>
     </tfoot>

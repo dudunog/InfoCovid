@@ -11,39 +11,50 @@ namespace InfoCovid.Pages.Filters
 {
   public class CountryModel : PageModel
   {
-    private readonly ILogger<CountryModel> _logger;
-    public Country Country { get; private set; }
-    public Country[] Countries { get; private set; }
-    public IMemoryCache MemoryCache { get; private set; }
+        private readonly ILogger<CountryModel> _logger;
+        public Country Country { get; private set; }
+        public Country[] Countries { get; private set; }
+        public IMemoryCache MemoryCache { get; private set; }
 
-    public CountryModel(ILogger<CountryModel> logger, IMemoryCache memoryCache)
-    {
-      _logger = logger;
-      MemoryCache = memoryCache;
-    }
+        public CountryModel(ILogger<CountryModel> logger, IMemoryCache memoryCache)
+        {
+             _logger = logger;
+            MemoryCache = memoryCache;
+        }
 
-    public async Task OnGetAsync(string pais)
-    {
-      try
-      {
-        string key_countries = "countries_key";
-        if (!MemoryCache.TryGetValue<Country[]>(key_countries, out Country[] values))
+        public async Task OnGetAsync(string text)
         {
-          var create = RestService.For<IGetRoot>("https://api.covid19api.com/summary");
-          var result = await create.GetAsync();
-          Countries = result.Countries;
-          Country = (Country) from item in result.Countries where (item.Name == pais) select item;
-          MemoryCache.Set(key_countries, Countries, System.TimeSpan.FromMinutes(30));
+            try
+            {
+                string key_countries = "countries_key";
+                if (!MemoryCache.TryGetValue<Country[]>(key_countries, out Country[] values))
+                {
+                    var create = RestService.For<IGetRoot>("https://api.covid19api.com/summary");
+                    var result = await create.GetAsync();
+                    Countries = result.Countries;
+                    buscaCountryAsync(Countries, text);
+                    MemoryCache.Set(key_countries, Countries, System.TimeSpan.FromMinutes(30));
+                }
+                else
+                {
+                  buscaCountryAsync(values, text);
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogInformation("Erro na requisição http: " + e.Message);
+            }
         }
-        else
+
+        public void buscaCountryAsync(Country[] values, string text)
         {
-          Country = (Country) from item in values where (item.Name == pais) select item;
+            foreach (var item in values)
+            {
+                if (item.Name == text)
+                {
+                    Country = item;
+                }
+            }
         }
-      }
-      catch (Exception e)
-      {
-        _logger.LogInformation("Erro na requisição http: " + e.Message);
-      }
     }
-  }
 }

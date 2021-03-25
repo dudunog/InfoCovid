@@ -26,7 +26,7 @@ namespace InfoCovid.Pages.Filters
     {
       try
       {
-        string key_countries = "cuontries_key";
+        string key_countries = "countries_key";
         string key_date = "date_key";
 
         Country[] countries = null;

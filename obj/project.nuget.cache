@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p6b3YTkEr6BtZvuZlRoY9qqt6ppq95UoWuDptG7HWJneIBtwcAvW81sWWii63NbMmxY9HjqiylbCd4AMncmIMA==",
+  "dgSpecHash": "vN8+HyLpoxbNih0y3ka6LS2vFzb4pnQSK/tXeYSdeSCFIP/wtU/+XJFctIvCG2LsjLr7gRTEB0IbXCXFlEUMmg==",
   "success": true,
-  "projectFilePath": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
+  "projectFilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj",
   "expectedPackageFiles": [
+    "/home/eduardo/.nuget/packages/moment.js/2.29.1/moment.js.2.29.1.nupkg.sha512",
     "/home/eduardo/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/home/eduardo/.nuget/packages/refit/5.2.4/refit.5.2.4.nupkg.sha512",
     "/home/eduardo/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"

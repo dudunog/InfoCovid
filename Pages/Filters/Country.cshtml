@@ -1,8 +1,8 @@
-@page  "{text}"
+@page "{text}"
 @model CountryModel
 @{
   ViewData["Title"] = "InfoCovid";
 }
 
-<h3></h3>
-<p>Última atualização:</p>
+<h2>@Model.Country.Name</h2>
+<p>Última atualização:@Model.Country.Date</p>

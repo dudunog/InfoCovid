@@ -5,7 +5,9 @@
 }
 
 <h3>Mundo</h3>
-<p>Última atualização: @Model.Date</p>
+<p>Última atualização: @Model.Date.ToLocalTime().ToString("g",
+  System.Globalization.CultureInfo.CreateSpecificCulture("pt-Br"))
+</p>
 
 <div class="card-group d-flex justify-content-around lg-10">
   <div class="col-xxl-3 col-lg-3">
@@ -37,6 +39,7 @@
   </div>
 </div>
 
+<br>
 <h3>Filtrar</h3>
 
 <div class="card-group">

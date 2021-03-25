@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj": {}
+    "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj": {}
   },
   "projects": {
-    "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj": {
+    "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
+        "projectUniqueName": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj",
         "projectName": "InfoCovid",
-        "projectPath": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
+        "projectPath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj",
         "packagesPath": "/home/eduardo/.nuget/packages/",
-        "outputPath": "/home/eduardo/Desktop/infoc/InfoCovid/obj/",
+        "outputPath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/eduardo/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Moment.js": {
+              "target": "Package",
+              "version": "[2.29.1, )"
+            },
             "Refit": {
               "target": "Package",
               "version": "[5.2.4, )"
@@ -59,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
         }
       }
     }

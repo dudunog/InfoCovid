@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/InfoCovid.csproj",
+  "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/InfoCovid.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,58 +14392,58 @@
   "RootNamespace": "InfoCovid",
   "Documents": [
     {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Filters/LatestNewsletters.cshtml",
-      "TargetPath": "Pages\\Filters\\LatestNewsletters.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Filters/Countries.cshtml",
-      "TargetPath": "Pages\\Filters\\Countries.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Filters/Today.cshtml",
-      "TargetPath": "Pages\\Filters\\Today.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Filters/Country.cshtml",
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Filters/Country.cshtml",
       "TargetPath": "Pages\\Filters\\Country.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Filters/Deaths.cshtml",
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Filters/Deaths.cshtml",
       "TargetPath": "Pages\\Filters\\Deaths.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/eduardo/Desktop/infoc/InfoCovid/Pages/Shared/_Layout.cshtml",
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Shared/_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Filters/Countries.cshtml",
+      "TargetPath": "Pages\\Filters\\Countries.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Filters/Today.cshtml",
+      "TargetPath": "Pages\\Filters\\Today.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/eduardo/Documents/git-projects/infoc/InfoCovid/Pages/Filters/LatestNewsletters.cshtml",
+      "TargetPath": "Pages\\Filters\\LatestNewsletters.cshtml",
       "FileKind": "mvc"
     }
   ],
